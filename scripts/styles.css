@@ -1,0 +1,115 @@
+body {
+	background: #000000;
+	color: #ffffff;
+	font-family: Ubuntu;
+	margin: auto;
+	max-width: 800px;
+}
+
+input {
+	padding: 20px;
+	border-radius: 50px;
+	border: none;
+	font-family: Ubuntu;
+	vertical-align: middle;
+}
+h1 {
+	margin-top: 150px;
+	margin-left: 40px;
+}
+
+img {
+	width: 15px;
+	vertical-align: middle;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 20px;
+	margin-left: 70px;
+	width: 75%;
+	
+}
+tr:nth-child(even) {
+	background-color: #c8dcdc;
+	color: #000000;
+
+}
+th {
+	height: 20px;
+	vertical-align: bottom;
+	background-color: #93a2a2;
+	font-size: 120%;
+	/*border: 3px solid black;*/
+	color:#000000; 
+}
+td, th {
+	padding: 10px;
+	text-align: left;
+	/*border: 1px solid red;*/
+}
+button {
+	border: none;
+	border-radius: 10px;
+	font-family: Ubuntu;
+	font-size: 75%;
+	width: auto;
+	margin-left: 10px;
+	background:#e06150;
+	color:#c8dcdc;
+	padding: 5px;
+}
+
+.shopping-list-display {
+	width: auto;
+	/*background: #69c4ba*/
+}
+.adding-block {
+	background: #69c4ba;
+	padding: 40px;
+	width: auto;
+	height: 100px;
+	border-radius: 50px;
+}
+
+#item_desc {
+	width: 300px;
+	padding-left: 30px;
+}
+
+#qty-input {
+	width: 80px;
+	padding-left: 30px;
+}
+#qty{
+	width: 5%;
+}
+#price-input {
+	width: 50px;
+	padding-left: 30px;
+}
+
+#add-btn {
+	width: 50px;
+	height: 50px;
+}
+
+#footer {
+	text-align: center;
+	color: grey;
+	font-size: 85%;
+}
+
+#date {
+	font-family: Born Ready;
+	font-size: 150%;
+	margin-top: 25px;
+	margin-left: 70px;
+}
+
+#grand-total {
+	font-family: Born Ready;
+	font-size: 150%;
+	text-align: right;
+	margin-right: 150px;
+}

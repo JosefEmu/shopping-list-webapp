@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping list | Your Shopping List</title>
+	<script type="text/javascript" src="./scripts/jquery-lib.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./scripts/styles.css">
+</head>
+
+<body>
+<p id="heading"></p>
+<div class="shopping-block"></div>
+<div class="shopping-list-display">
+	<p id="date">For </p>
+	<table>
+		<thead>
+			<th>Item Description</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th></th>
+
+		</thead>
+		<tbody>
+			<tr>
+				<td>Sugar 2kg</td> 
+				<td id="qty">1</td>
+				<td>240</td>
+				<td><button>edit</button></td>
+			</tr>
+			<tr>
+				<td>Honey 250ml</td>
+				<td id="qty">1</td>
+				<td>500</td>
+				<td><button>edit</button></td>
+			</tr>
+			<tr>
+				<td>Rice 5kg</td>
+				<td id="qty">1</td>
+				<td>890</td>
+				<td><button>edit</button></td>
+			</tr>
+			<tr>
+				<td>Sea Salt 250g</td>
+				<td id="qty">1</td>
+				<td>100</td>
+				<td><button>edit</button></td>
+			</tr>
+			<tr>
+				<td>Maize Flour 2kg</td>
+				<td id="qty">2</td>
+				<td>240</td>
+				<td><button>edit</button></td>
+			</tr>
+		</tbody>
+	</table>
+	<p id="grand-total">Total= Kes. 1,500</p>
+</div>
+
+
+<p id="footer-list"></p>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#heading').load("./homepage.html h1");
+		$('.shopping-block').load("./homepage.html .adding-block");
+		$('#footer-list').load("./homepage.html #footer");
+	});
+
+	var d= new Date($.now());
+	$("#date").append(d.toLocaleDateString()+ "...");
+</script>
+
+</body>
+</html>
+
